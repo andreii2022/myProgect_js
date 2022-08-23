@@ -23,6 +23,9 @@
 
 'use strict';
 
+                    // Приложение start
+
+
 // const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?');
 
 // const personalMovieDB = {
@@ -145,13 +148,24 @@
 // console.log(arr.toString());
 // console.log(arr.join(';'));
 
-isPalindrome('шала');
+// isPalindrome('шала');
+
+// function isPalindrome (str) {
+//     let arr = str.split(''); // разбиваем строку посимвольно на массив
+//     let reversArr = arr.reverse();  // полученый массив символов разварачиваем 
+//     let resString = reversArr.join(''); // полученый развернутый массив склеиваем опять в слово
+//     let result = str === resString; // cравниваем передаваемое в функцию слово и наше перевернутое
+//     console.log(result);
+// }
+
+
+isPalindrome('ehfuehufhuqfuioq');
 
 function isPalindrome (str) {
-    let arr = str.split('');
-    let reversArr = arr.reverse();
-    let resString = reversArr.join('');
-    let result = str === resString;
+    let arr = str.split(''); // разбиваем сьроку посимвольно на массив
+    let reversArr = arr.reverse(); // полученый массив символов разворачиваем
+    let resString = reversArr.join(''); // полученый развернутый массив склеиваем
+    let result = str === resString; // сравниваем переданное в функцию слово и развернутое
     console.log(result);
 }
 
@@ -163,4 +177,77 @@ function isPalindrome (str) {
 
 
 
+// isPalindrome('А роза упала на лапу азора');
 
+// function isPalindrome(str) {
+//     let arr = str.split();
+//     let reversArr = arr.reverse();
+//     let resString = reversArr.join('');
+//     let result = str === resString;
+//     console.log(result);
+// }
+
+// for (let i = 0; i <= 3; i++) {
+//     console.log(i);
+//     for (let j = 0; j <=3; j++) {
+//         console.log(j);
+//     }
+    
+// }
+
+// let result = '';
+// const lenght = 7;
+
+// for (let i = 1; i < lenght; i++) {
+    
+    
+//     for (let j = 0; j < i; j++) {
+//         result += "*";
+//     } 
+//     result += '\n';
+    
+// }
+// console.log(result);
+
+
+// function secondTask() {
+//     for (let i = 20; i > 10; i--) {
+//         if (i === 13) break;
+            
+        
+//         console.log(i);
+//     }
+    
+// }
+// secondTask();
+
+
+// for (let i = 2; i <= 10; i++) {
+//     if (i % 2 === 0 ) {
+//         console.log(i);
+//     }
+// }
+
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?');
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+for (let i = 0; i < 2; i++) {
+const a = prompt('Один из последних просмотренных фильмов?',''),
+      b = prompt('На сколько оцените его?', '');
+
+      if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+        personalMovieDB.movies[a] = b;
+        console.log('Done');
+      } else {
+        console.log('error');
+        i--;
+      } 
+      
+}
+      console.log(personalMovieDB);
