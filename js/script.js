@@ -159,15 +159,15 @@
 // }
 
 
-isPalindrome('ehfuehufhuqfuioq');
+// isPalindrome('ehfuehufhuqfuioq');
 
-function isPalindrome (str) {
-    let arr = str.split(''); // разбиваем сьроку посимвольно на массив
-    let reversArr = arr.reverse(); // полученый массив символов разворачиваем
-    let resString = reversArr.join(''); // полученый развернутый массив склеиваем
-    let result = str === resString; // сравниваем переданное в функцию слово и развернутое
-    console.log(result);
-}
+// function isPalindrome (str) {
+//     let arr = str.split(''); // разбиваем сьроку посимвольно на массив
+//     let reversArr = arr.reverse(); // полученый массив символов разворачиваем
+//     let resString = reversArr.join(''); // полученый развернутый массив склеиваем
+//     let result = str === resString; // сравниваем переданное в функцию слово и развернутое
+//     console.log(result);
+// }
 
 
 
@@ -228,26 +228,204 @@ function isPalindrome (str) {
 //     }
 // }
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?');
+// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?');
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
-for (let i = 0; i < 2; i++) {
-const a = prompt('Один из последних просмотренных фильмов?',''),
-      b = prompt('На сколько оцените его?', '');
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
+// for (let i = 0; i < 2; i++) {
+// const a = prompt('Один из последних просмотренных фильмов?',''),
+//       b = prompt('На сколько оцените его?', '');
 
-      if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-        personalMovieDB.movies[a] = b;
-        console.log('Done');
-      } else {
-        console.log('error');
-        i--;
-      } 
+//       if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//         personalMovieDB.movies[a] = b;
+//         console.log('Done');
+//       } else {
+//         console.log('error');
+//         i--;
+//       } 
       
+// }
+//       console.log(personalMovieDB);
+
+// isPalindrome('tat');
+
+// function isPalindrome(str) {
+//     let arr = str.split();
+//     let reversArr = arr.reverse();
+//     let strResult = reversArr.join('');
+//     let result = str === strResult;
+//     console.log(result);
+
+// }
+
+
+
+
+
+
+
+// isPalindrome('шалаш');
+
+// function isPalindrome(str) {
+// let arr = str.split();
+// let reversArr = arr.reverse();
+// let resString = reversArr.join('');
+// let result = str === resString;
+// console.log(result);
+// }
+
+// isPalindrome('iui');
+
+
+// function isPalindrome (str) {
+//     let a = str === str.split('').reverse().join('');
+//     console.log(a);
+// }
+
+
+// function isPalindrome (str) {
+//     let a= str === str.split('').reverse().join('');
+//     console.log(a);
+// }
+// isPalindrome('hah');
+
+
+// findShort('3, 1 , 4, 2');
+
+// function findShort(string) {
+//     let wordsArr = string.split(' ');
+//     let sortWordsArr = wordsArr.sort(function (b, a) {
+//         return b.length - a.length;
+
+//     });
+//     console.log(sortWordsArr[0]);
+
+
+// }
+
+
+// isPalindrome('шалаш');
+
+// function isPalindrome(str) {
+//     let arr = str.split('');
+//     let arrRevers = arr.reverse();
+//     let resString = arrRevers.join('');
+//     let result = str === resString;
+//     console.log(result);
+// }
+
+// let result = '';
+// const lenght = 7;
+
+// for (let i = 1; i < lenght; i++) {
+
+
+//     for (let j = 0; j < i; j++) {
+//         result += "*";
+//     }
+
+//     result += '\n';
+
+// }
+// console.log(result);
+
+
+// let result = '';
+// const lenght = 7;
+
+// for (let i = 1; i < lenght; i++) {
+    
+    
+//     for (let j = 0; j < i; j++) {
+//         result += "*";
+//     } 
+//     result += '\n';
+    
+// }
+// console.log(result);
+
+
+
+// isPalindrome('шалаш');
+// function isPalindrome(str) {
+//     let arr = str.split('');
+//     let reversArr = arr.reverse();
+//     let resString = reversArr.join('');
+//     let result = str === resString;
+//     console.log(result);
+// }
+
+// function findShott(string) {
+//     let wordsArr = string.split(' ');
+//     let sortWordsArr = wordsArr.sort(function(a, b) {
+//         return a.length - b.length;
+
+//     });
+//     console.log(sortWordsArr[0]);
+// }
+// findShott('gggggg jjjjjj k huhhuuu');
+
+
+// function findShott(string) {
+//     let wordsArr = string.split(' ');
+//     let sortWordsArr = wordsArr.sort(function (a, b){
+//         return a.length - b.length;
+    
+       
+//     });
+//     console.log(sortWordsArr[0]);
+// }
+// findShott('hhhh jjj k hhhhhhhhhh');
+
+// function findShott (string) {
+//     let wordsArr = string.split(' ');
+//     let sortWordsArr = wordsArr.sort(function (a, b) {
+//         return a.length - b.length;
+
+//     });
+//     console.log(sortWordsArr[0]);
+// }
+// findShott('cc b mmmm');
+
+
+
+
+
+
+// function isPalindrome(str) {
+//     let arr = str.split('');
+//     let reversArr = arr.reverse();
+//     let resString = reversArr.join('');
+//     let result = str === resString;
+//     console.log(result);
+// }
+// isPalindrome('nfnwlw');
+
+// function toInitials(name) {
+//     let nameArr = name.split(' ');
+//     let firstLetterArr = nameArr.map(function(el) {
+//         return el.slice(0,1).toUpperCase() + '.';
+// });
+//     let initials = firstLetterArr.join('');
+//     console.log(initials);
+// }
+// toInitials('andrii volodumurovith');
+// toInitials('cndrii nolodumurovith');
+
+
+
+function toInitials(name) {
+    let nameArr = name.split(' ');
+    let firstLetterArr = nameArr.map(function(el) {
+        return el.slice(0,1).toUpperCase() + '.';
+
+});
+        let inItials = firstLetterArr.join('');
+        console.log(inItials);
 }
-      console.log(personalMovieDB);
+toInitials('kkkkkkkk bbbbbbbbb');
