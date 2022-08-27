@@ -370,6 +370,19 @@
 // }
 // findShott('gggggg jjjjjj k huhhuuu');
 
+// function findShott(string) {
+//     let wordsArr = string.split(' ');
+//     let sortWordsArr = wordsArr.sort(function(a, b){
+//         return a.length - b.length;
+
+//     });
+//     console.log(sortWordsArr[0]);
+    
+// }
+// findShott('fkwfkw llll v');
+
+
+
 
 // function findShott(string) {
 //     let wordsArr = string.split(' ');
@@ -406,6 +419,33 @@
 // }
 // isPalindrome('nfnwlw');
 
+
+
+                    ФУНКЦИЯ СОЗДАНИЯ ИННИЦИАЛОВ!!!
+
+// function inInitial (name) {
+//     let nameArr = name.split(' ');
+//     let firstLetterArr = nameArr.map(function(el){
+//         return el.slice(0,1).toUpperCase() + '.';
+
+//     });
+//     let inInitials = firstLetterArr.join('');
+//     console.log(inInitials);
+// }
+// inInitial('kkkkkkkk wwwwwwwww');
+
+// function toInitial(name) {
+//     let nameArr = name.split(' ');
+//     let firstLetterArr = nameArr.map(function(el){
+//         return el.slice(0,1).toUpperCase() + '.';
+//     }); 
+//     let inInitials = firstLetterArr.join('');
+//     console.log(inInitials);
+// }
+
+// toInitial('wwwwwwwww wwwwwwwww');
+
+
 // function toInitials(name) {
 //     let nameArr = name.split(' ');
 //     let firstLetterArr = nameArr.map(function(el) {
@@ -419,13 +459,203 @@
 
 
 
-function toInitials(name) {
-    let nameArr = name.split(' ');
-    let firstLetterArr = nameArr.map(function(el) {
-        return el.slice(0,1).toUpperCase() + '.';
+// function toInitials(name) {
+//     let nameArr = name.split(' ');
+//     let firstLetterArr = nameArr.map(function(el) {
+//         return el.slice(0,1).toUpperCase() + '.';
 
-});
-        let inItials = firstLetterArr.join('');
-        console.log(inItials);
-}
-toInitials('kkkkkkkk bbbbbbbbb');
+// });
+//         let inItials = firstLetterArr.join('');
+//         console.log(inItials);
+// }
+// toInitials('kkkkkkkk bbbbbbbbb');
+
+// function inInitials(name) {
+//     let nameArr = name.split(' ');
+//     let firstLetterArr = nameArr.map(function(el){
+//         return el.slice(0,1).toUpperCase() + '.';
+//     });
+//     let inInitial = firstLetterArr.join('');
+//     console.log(inInitial);
+// }
+// inInitials('dddd jjjjjj');
+
+// function inInitial (name) {
+//     let nameArr = name.split(' ');
+//     let firstLetterArr = nameArr.map(function(el){
+//         return el.slice(0,1).toUpperCase() +'.';
+
+
+//     });
+//     let inInitial = firstLetterArr.join('');
+//     console.log(inInitial);
+// }
+// inInitial('ddddddd ddddddddd');
+
+
+
+
+                ФУНКЦИЯ СУММИРОВАНИЯ ВСЕХ ЦИФР ЧИСЛА!!!
+
+
+// function sumDigits (number) {
+//     let modulNumber = Math.abs(number);
+//     let str = modulNumber.toString();
+//     let arr = str.split('');
+//     let res = arr.reduce(function(sum, cur){
+//         return Number(sum) + Number(cur);
+//     }, 0 );
+//     console.log(res);
+// }
+// sumDigits(-52);
+
+
+// function sumDigits (number) {
+//     let modulNumber = Math.abs(number);
+//     let str = modulNumber.toString();
+//     let arr = str.split('');
+//     let res = arr.reduce(function(sum, cur){
+//         return Number(sum) + Number(cur);
+//     },0);
+//     console.log(res);
+// }
+// sumDigits(123456789987654321);
+
+
+
+
+// function isPalindrome(str) {
+//     let arr = str.split('');
+//     let reversArr = arr.reverse();
+//     let resString = reversArr.join('');
+//     let result = str === resString;
+//     console.log(result);
+// }   
+// isPalindrome('hah');
+
+
+// function ispalindrome(str) {
+//     let arr = str.split('');
+//     let reversArr = arr.reverse();
+//     let resString = reversArr.join('')
+//     let result = str === resString;
+//     console.log(result);
+// }
+// ispalindrome('шалаш');
+
+
+
+
+
+
+        ФУНКЦИЯ ПОИСКА МИНИМАЛЬНОГО И МАКСИМАЛЬНОГО ЗНАЧЕНИЙ В МАССИВЕ!!!
+
+
+// function minMax(arr){
+//     let res = [];
+//     let minValue = Math.min.apply(null, arr);
+//     let maxValue = Math.max.apply(null, arr);
+//     let newArr =   res.push(minValue, maxValue);
+//     console.log(newArr);
+
+     
+// }
+// minMax([2, 9, 10, 25, 47, 4, 1]);
+
+
+                         ЦИКЛ ПО СЩЗДАНИЮ ЁЛОЧКИ!!! 
+
+// let result = '';
+// const lenght = 7;
+
+// for (let i =1; i < lenght; i++) {
+//     for (let j = 0; j < i; j++) {
+//         result += "*";
+//     }
+
+//     result += '\n';
+// }
+// console.log(result);
+                         фУНКЦИЯ ПАЛИНДРОМ!!!
+
+// function isPalindrome(str) {
+//     let arr = str.split('');
+//     let reversArr = arr.reverse();
+//     let resString = reversArr.join('');
+//     let result = str === resString;
+//     console.log(result);
+// }
+// isPalindrome('idi');
+
+                    ФУНКЦИЯ ПАЛИНДРОМ ПРОДВИНУТЫЙ ВАРИАНТ!!!
+
+// function isPalindrome(str) {
+//     let arr = str === str.split('').reverse().join('');
+//     console.log(arr);
+// }
+// isPalindrome('hah');
+
+
+
+            ФУНКЦИЯ ПО ПОИСКУ САМОГО МАЛЕНЬКОГО СЛОВА В СТРОКЕ!!!
+
+// function findShott (string) {
+//   let wordsArr = string.split(' ');
+//   let sortedWordsArr = wordsArr.sort(function(a, b){
+//      return  a.length - b.length;
+
+//       });  
+//       console.log(sortedWordsArr[0]);
+
+// }
+// findShott('gggg llllllll mmm');
+
+
+// function findShott (string) {
+//     let wordsArr = string.split(' ');
+//     let firstWordsArr = wordsArr.sort(function(a, b){
+//         return a.length - b.length;
+//     });
+//     console.log(firstWordsArr[0]);
+// }
+// findShott('wwwww jjjjjjjj o');
+
+
+                ФУНКЦИЯ СОЗДАНИЯ НАБОРА ДУБЛИКАТОВ!!!
+
+// function accum (string) {
+//     let arr = string.toUpperCase().split('');
+//     let repeatArr = arr.map (function(el,i){
+//         return el += el.repeat(i).toLowerCase();
+
+//     });
+//     let resString = repeatArr.join('-');
+//     console.log(resString);
+// }
+// accum('abcd');
+
+// function accum(string) {
+//     let arr = string.toUpperCase().split('');
+//     let repeatArr = arr.map(function(el, i){
+//         return el += el.repeat(i).toLowerCase();
+//     });
+//     let resString = repeatArr.join('-');
+//     console.log(resString);
+
+// }
+// accum('abcdefgklmnop');
+
+
+// function acuum (string) {
+//     let arr = string.toUpperCase().split('');
+//     let repeatArr = arr.map(function(el, i){
+//         return el += el.repeat(i).toLowerCase();
+
+//     });
+//     let resString = repeatArr.join('-');
+//     console.log(resString);
+// }
+// acuum('llllllllll');
+
+
+
