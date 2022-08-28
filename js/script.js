@@ -493,6 +493,41 @@
 // inInitial('ddddddd ddddddddd');
 
 
+// function toInitials(name) {
+//     let nameArr = name.split(' ');
+//     let firstLetterArr = nameArr.map(function(el){
+//         return el.slice(0, 1).toUpperCase();
+//     });
+//     let initial = firstLetterArr.join('');
+//     console.log(initial);
+// }
+// toInitials('kokkokokokko llllll');
+
+function toInitials(name) {
+    let nameArr = name.split(' ');
+    let firstLetterArr = nameArr.map(function(el){
+        return el.slice(0, 1).toUpperCase() + '.';
+    } ); 
+    let initial = firstLetterArr.join('');
+    console.log(initial);
+}
+toInitials('kkkkkk lllllllllll');
+
+function toInitials(name) {
+    let nameArr = name.split(' ');
+    let firstLetterArr = nameArr.map(function(el){
+        return el.slice(0, 1).toUpperCase() + '.';
+
+    });
+    let letter = firstLetterArr.join(''); 
+    console.log(letter);
+}
+toInitials('ddddd ddddddd');
+
+
+
+
+
 
 
                 ФУНКЦИЯ СУММИРОВАНИЯ ВСЕХ ЦИФР ЧИСЛА!!!
@@ -521,6 +556,103 @@
 // }
 // sumDigits(123456789987654321);
 
+// function sumDigits(number) {
+//     let modulNumber = Math.abs(number);
+//     let str = modulNumber.toString();
+//     let arr = str.split('');
+//     let res = arr.reduce(function(sum, cur){
+//         return Number(sum) + Number(cur);
+//     },0);
+//     console.log(res);
+// }
+// sumDigits(323232323);
+
+function sumDigits (number) {
+    let modulNumber = Math.abs(number);
+    let str = modulNumber.toString();
+    let arr = str.split('');
+    let res = arr.reduce(function(sum, cur){
+        return Number(sum) + Number(cur);
+    },0);
+    console.log(res);
+}
+sumDigits(555555555);
+
+
+
+
+
+
+
+
+
+        ФУНКЦИЯ ПОИСКА МИНИМАЛЬНОГО И МАКСИМАЛЬНОГО ЗНАЧЕНИЙ В МАССИВЕ!!!
+
+function minMax(arr) {
+    let res = [];
+    let minValue = Math.min.apply(null, arr);
+    let maxValue = Math.max.apply(null, arr);
+    res.push(minValue, maxValue);
+    console.log(res);
+
+}
+minMax([99, 22, 9, 1]);
+     
+function minMax(arr) {
+    let res = [];
+    let minValue = Math.min.apply(null, arr);
+    let maxValue = Math.max.apply(null, arr);
+    res.push(minValue, maxValue);
+    console.log(res);
+}
+minMax([999]);
+//  
+
+
+
+
+
+
+                         ЦИКЛ ПО СЩЗДАНИЮ ЁЛОЧКИ!!! 
+
+// let result = '';
+// const lenght = 7;
+
+// for (let i =1; i < lenght; i++) {
+//     for (let j = 0; j < i; j++) {
+//         result += "*";
+//     }
+
+//     result += '\n';
+// }
+// console.log(result);
+
+// let result = '';
+// const lenght = 10;
+
+// for (let i = 1; i < lenght; i++) {
+
+//     for(let j = 0; j < i; j++) {
+//         result += '*';
+//     }
+
+//     result += '\n';
+// }
+// console.log(result);
+
+
+
+
+                         фУНКЦИЯ ПАЛИНДРОМ!!!
+
+// function isPalindrome(str) {
+//     let arr = str.split('');
+//     let reversArr = arr.reverse();
+//     let resString = reversArr.join('');
+//     let result = str === resString;
+//     console.log(result);
+// }
+// isPalindrome('idi');
 
 
 
@@ -545,39 +677,6 @@
 
 
 
-
-
-
-        ФУНКЦИЯ ПОИСКА МИНИМАЛЬНОГО И МАКСИМАЛЬНОГО ЗНАЧЕНИЙ В МАССИВЕ!!!
-
-
-// function minMax(arr){
-//     let res = [];
-//     let minValue = Math.min.apply(null, arr);
-//     let maxValue = Math.max.apply(null, arr);
-//     let newArr =   res.push(minValue, maxValue);
-//     console.log(newArr);
-
-     
-// }
-// minMax([2, 9, 10, 25, 47, 4, 1]);
-
-
-                         ЦИКЛ ПО СЩЗДАНИЮ ЁЛОЧКИ!!! 
-
-// let result = '';
-// const lenght = 7;
-
-// for (let i =1; i < lenght; i++) {
-//     for (let j = 0; j < i; j++) {
-//         result += "*";
-//     }
-
-//     result += '\n';
-// }
-// console.log(result);
-                         фУНКЦИЯ ПАЛИНДРОМ!!!
-
 // function isPalindrome(str) {
 //     let arr = str.split('');
 //     let reversArr = arr.reverse();
@@ -585,7 +684,22 @@
 //     let result = str === resString;
 //     console.log(result);
 // }
-// isPalindrome('idi');
+// isPalindrome('hhhhh');
+
+
+// function isPalindrome(str) {
+//     let arr = str.split('');
+//     let reverseArr = arr.reverse();
+//     let resStrit = reverseArr.join('');
+//     let result = str === resStrit;
+//     console.log(result);
+// }
+// isPalindrome('dfd');
+
+
+
+
+
 
                     ФУНКЦИЯ ПАЛИНДРОМ ПРОДВИНУТЫЙ ВАРИАНТ!!!
 
@@ -594,6 +708,32 @@
 //     console.log(arr);
 // }
 // isPalindrome('hah');
+
+
+
+// function isPalindrome (str) {
+//     let arr = str === str.split('').reverse().join('');
+//     console.log(arr);
+
+// }
+// isPalindrome('dsd');
+
+
+// function isPalindrome (str) {
+//     let arr =  str === str.split('').reverse().join('');
+//     console.log(arr);
+// }
+// isPalindrome('www');
+
+
+// function isPalindrome (str) {
+//     let arr = str === str.split('').reverse().join('');
+//     console.log(arr);
+// }
+
+//  isPalindrome('ghgwjfwoJO');
+
+
 
 
 
@@ -619,6 +759,26 @@
 //     console.log(firstWordsArr[0]);
 // }
 // findShott('wwwww jjjjjjjj o');
+
+
+
+// function findShort (string) {
+//     let wordsArr = string.split(' ');
+//     let firstWordsArr = wordsArr.sort(function(a, b){
+//         return a.length - b.length;
+//     });
+//     console.log(firstWordsArr[0]);
+// }
+// findShort('llllll ffff w');
+
+
+
+
+
+
+
+
+
 
 
                 ФУНКЦИЯ СОЗДАНИЯ НАБОРА ДУБЛИКАТОВ!!!
@@ -656,6 +816,17 @@
 //     console.log(resString);
 // }
 // acuum('llllllllll');
+
+
+function accum (string) {
+    let arr = string.toUpperCase().split('');
+    let repeatArr = arr.map(function(el, i){
+        return el += el.repeat(i).toLowerCase();
+    });
+    let resString = repeatArr.join('-');
+    console.log(resString);
+}
+accum('fmkfmvfkmvfkmvf');
 
 
 
